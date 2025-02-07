@@ -50,11 +50,11 @@ form {
 input {
   flex: 1;
   height: 44px;
-  border-radius: 5px;
-  border: 2px solid #202024;
-  background-color: #202024;
+  border-radius: 12px;
+  border: 2px solid var(--content-tertiary);
+  background-color: var(--background-secondary);
   padding: 16px;
-  color: #fff;
+  color: var(--always-white);
   font-size: 16px;
 
   font-family: "Roboto", sans-serif;
@@ -62,7 +62,7 @@ input {
 
 input:focus {
   outline: 0;
-  border-color: #8234e9;
+  border-color: var(--color-brand);
 }
 
 button {
@@ -86,19 +86,23 @@ button {
   font-weight: medium;
 }
 
+#checkbox {
+  margin-right: 30px;
+}
+
 .button {
   height: 44px;
   background-color: var(--color-brand);
   border-radius: 12px;
   border: 1px, solid var(--content-primary);
-  color: #fff;
+  color: var(--always-white);
   font-size: 14px;
   font-weight: bold;
 
   padding: 0 32px;
   transition: background-color 0.2s;
 
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .button:hover {
@@ -111,19 +115,19 @@ ul {
 }
 
 .guest {
-  color: #fff;
+  color: var(--content-primary);
   font-size: 16px;
-  background-color: #202024;
+  background-color: var(--background-secondary);
 
   margin-bottom: 16px;
   padding: 22px 16px;
   border-radius: 5px;
 
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
+  font-family: "Inter", sans-serif;
 
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 @media (max-width: 420px) {
